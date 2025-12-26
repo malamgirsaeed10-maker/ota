@@ -1,0 +1,232 @@
+body {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+    background: #f5f7fa;
+    margin: 0;
+    padding: 0;
+    color: #1a1a1a;
+}
+
+header {
+    background: #0d6efd;
+    color: #fff;
+    padding: 20px;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 22px;
+}
+
+main {
+    max-width: 1000px;
+    margin: 30px auto;
+    background: #fff;
+    padding: 25px;
+    border-radius: 8px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+}
+
+footer {
+    text-align: center;
+    font-size: 13px;
+    color: #666;
+    padding: 20px;
+}
+
+.notice {
+    background: #fff3cd;
+    border: 1px solid #ffeeba;
+    padding: 15px;
+    border-radius: 6px;
+    margin-bottom: 20px;
+}
+
+.notice strong {
+    color: #856404;
+}
+
+.form-row {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 15px;
+    flex-wrap: wrap;
+}
+
+label {
+    font-size: 13px;
+    font-weight: 600;
+    margin-bottom: 5px;
+    display: block;
+}
+
+input,
+select,
+button {
+    width: 100%;
+    padding: 10px;
+    font-size: 15px;
+}
+
+button {
+    background: #0d6efd;
+    border: none;
+    color: white;
+    font-weight: 600;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+button:disabled {
+    background: #9bbcf5;
+    cursor: not-allowed;
+}
+
+.results {
+    margin-top: 30px;
+}
+
+.flight-card {
+    border: 1px solid #ddd;
+    padding: 15px;
+    border-radius: 6px;
+    margin-bottom: 12px;
+}
+
+.flight-card button {
+    margin-top: 10px;
+}
+
+a {
+    color: #0d6efd;
+    text-decoration: none;
+}
+
+.typeahead {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background: #fff;
+    border: 1px solid #ddd;
+    border-top: none;
+    max-height: 280px;
+    overflow-y: auto;
+    z-index: 2000;
+    display: none;
+}
+
+.typeahead-item {
+    padding: 10px 12px;
+    cursor: pointer;
+    font-size: 14px;
+    border-bottom: 1px solid #f1f1f1;
+}
+
+.typeahead-item:hover {
+    background: #f5f7fa;
+}
+
+.typeahead-item strong {
+    font-weight: 700;
+    margin-right: 6px;
+}
+
+
+.modal {
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, .6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-content {
+    background: #fff;
+    padding: 25px;
+    border-radius: 8px;
+    width: 320px;
+}
+
+.hidden {
+    display: none;
+}
+
+
+
+/* ===============================
+   FLIGHT RESULT CARDS
+================================ */
+
+.flight-card {
+    background: #fff;
+    border: 1px solid #e5e7eb;
+    border-radius: 10px;
+    padding: 16px;
+    margin-bottom: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.flight-left {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.airline-box {
+    width: 70px;
+    text-align: center;
+}
+
+.airline-box img {
+    max-width: 60px;
+}
+
+.flight-segment {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.flight-time {
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.flight-code {
+    font-size: 12px;
+    color: #6b7280;
+}
+
+.flight-center {
+    text-align: center;
+}
+
+.flight-duration {
+    font-size: 13px;
+    color: #374151;
+}
+
+.flight-stop {
+    font-size: 12px;
+    color: #dc2626;
+}
+
+.flight-price {
+    text-align: right;
+}
+
+.flight-price strong {
+    font-size: 20px;
+}
+
+.flight-price button {
+    margin-top: 6px;
+}
+
+.return-divider {
+    border-top: 1px dashed #e5e7eb;
+    margin: 12px 0;
+}
